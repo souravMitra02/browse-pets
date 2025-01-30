@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind & DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google-Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- Font-Asowme CDN -->
+    <script src="https://kit.fontawesome.com/383b38ed75.js" crossorigin="anonymous"></script>
+    <title>Browse-Pets</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                adlam: ["ADLaM Display", "serif"],
+                sora: ["Sora", "serif"],
+              },
+              colors: {
+                clifford: '#da373d',
+                colorPrimary:'#FFDC26',
+                bgColor:'#FFF9F4',
+                cardColor:'#F9DF8A',
+              },
+            },
+          },
+        };
+      </script> 
+</head>
+<body>
+    <header>
+        <!-- Navigation-Section -->
+        <div class="navbar bg-bgColor px-2 md:px-8 lg:px-10 border  border-b-black md:border-none lg:border-none">
+            <div class="navbar-start space-x-4">
+              <img src="images/logo-header.png" alt="">
+              <h2 class="font-semibold text-2xl md:text-3xl lg:text-4xl ">Browse<span class="text-colorPrimary">4</span>Pets</h2>
+            </div>
+            <div class="navbar-center hidden md:hidden lg:flex">
+              <ul class="menu menu-horizontal  px-1 text-xl">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-6 ">
+                <i class="fa-regular fa-bell fa-xl hidden md:hidden lg:flex"></i>
+                <i class="fa-solid fa-magnifying-glass fa-xl  hidden md:hidden lg:flex"></i>
+              <button class=" hidden md:hidden lg:flex border border-colorPrimary px-8 py-2 font-bold">Login</button>
+              <button class="btn hidden md:hidden lg:flex px-8 py-2 font-bold bg-colorPrimary">Register</button>
+            </div>
+              <i class="fa-solid fa-bars fa-2xl   lg:hidden "></i>
+          </div>
+          <div class="px-5 lg:px-20 relative">
+            <div class="mt-10  space-y-5 "> 
+                <h2 class="font-adlam text-2xl lg:text-4xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h2>
+                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn  px-8 py-2 font-bold bg-colorPrimary">Find a pet</button>
+            </div>
+            <div class="relative ">
+                <img class="lg:  mx-auto " src="images/cat-big.png" alt="">
+            </div>
+          </div>  
+    </header>
+    <main>
+        <!-- Categories-Section -->
+         <section>
+            <div class="mt-20 px-5 lg:px-20">
+                <h2 class="font-adlam text-3xl font-bold">Browse By Categories</h2>
+            </div>
+            <!-- Categories-Card -->
+             <div class="grid grid-cols-2 px-5  lg:flex px-20 gap-5 mt-10">
+                <div class="bg-cardColor text-center p-10 rounded-lg space-y-3">
+                    <img class="mx-auto bg-white p-5 rounded-full" src="images/dog-cartoon.png" alt="">
+                    <h5 class="font-bold text-xl">Dog</h5>
+                    <p>3 Items</p>
+                </div>
+                <div class="bg-cardColor  text-center p-10 rounded-lg space-y-3">
+                    <img class="mx-auto bg-white p-5 rounded-full" src="images/dog-cartoon.png" alt="">
+                    <h5 class="font-bold text-xl">Dog</h5>
+                    <p>3 Items</p>
+                </div>
+                <div class="bg-cardColor text-center p-10 rounded-lg space-y-3">
+                    <img class="mx-auto bg-white p-5 rounded-full" src="images/dog-cartoon.png" alt="">
+                    <h5 class="font-bold text-xl">Dog</h5>
+                    <p>3 Items</p>
+                </div>
+                <div class="bg-cardColor  text-center p-10 rounded-lg space-y-3">
+                    <img class="mx-auto bg-white p-5 rounded-full" src="images/dog-cartoon.png" alt="">
+                    <h5 class="font-bold text-xl">Dog</h5>
+                    <p>3 Items</p>
+                </div>
+                <div class="bg-cardColor text-center p-10 rounded-lg space-y-3">
+                    <img class="mx-auto bg-white p-5 rounded-full" src="images/dog-cartoon.png" alt="">
+                    <h5 class="font-bold text-xl">Dog</h5>
+                    <p>3 Items</p>
+                </div>
+                <div class="bg-cardColor text-center p-10 rounded-lg space-y-3">
+                    <img class="mx-auto bg-white p-5 rounded-full" src="images/dog-cartoon.png" alt="">
+                    <h5 class="font-bold text-xl">Dog</h5>
+                    <p>3 Items</p>
+                </div>
+             </div>
+         </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
