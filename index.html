@@ -32,7 +32,7 @@
         };
       </script> 
 </head>
-<body>
+<body class="container mx-auto">
     <header>
         <!-- Navigation-Section -->
         <div class="navbar bg-bgColor px-2 md:px-8 lg:px-10 border  border-b-black md:border-none lg:border-none">
@@ -55,26 +55,24 @@
             </div>
               <i class="fa-solid fa-bars fa-2xl   lg:hidden "></i>
           </div>
-          <div class="px-5 lg:px-20">
-            <div class="mt-10  space-y-5 "> 
-                <h2 class="font-adlam text-3xl lg:text-4xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h2>
-                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="btn  px-8 py-2 font-bold bg-colorPrimary shadow-md animate-bounce delay-100">Find a pet</button>
+          <!--Banner Section-->
+          <div class=" bg-no-repeat bg-center	bg-contain h-[500px] lg:h-[400px] px-5		lg:px-16" style="background-image: url(./images/cat-big.png);">
+            <div class="mt-5 lg:mt-16 space-y-3 ">
+              <h2 class=" text-2xl font-adlam lg:text-5xl lg:leading-normal">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h2>
+              <p class="font-sora">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+              <button class=" px-8 py-3 font-bold bg-colorPrimary rounded-lg animate-bounce">Find a pet</button>
             </div>
-            <div class="relative ">
-                <img class="lg:  mx-auto " src="images/cat-big.png" alt="">
-            </div>
-          </div>  
+          </div>
     </header>
     <main>
         <!-- Categories-Section -->
          <section>
             <div class="mt-20 px-5 lg:px-20">
-                <h2 class="font-adlam text-3xl font-bold">Browse By Categories</h2>
+                <h2 class="font-adlam text-2xl lg:text-3xl font-bold">Browse By Categories</h2>
             </div>
             <!-- Categories-Card -->
              <div class="grid grid-cols-2 px-5 md:grid-cols-3 gap-4 lg:flex md:px-10 lg:px-20 gap-5 mt-10">
-                <div class="bg-cardColor text-center p-10 rounded-lg space-y-3">
+                <div class="bg-cardColor text-center p-10 rounded-lg space-y-3 animate-pulse">
                     <img class="mx-auto bg-white p-5 rounded-full" src="images/dog-cartoon.png" alt="">
                     <h5 class="font-bold text-xl">Dog</h5>
                     <p>3 Items</p>
@@ -112,7 +110,7 @@
             <section class="mt-20 bg-bgColor py-10 px-5 lg:px-20">
 
               <!-- Products-Title -->
-              <h2 class="font-adlam text-3xl font-bold mb-6">Trending Pet Products</h2>
+              <h2 class="font-adlam text-2xl lg:text-3xl font-bold mb-6">Trending Pet Products</h2>
               <div class="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-6">
                  
                   <div class="relative bg-cardColor p-6 rounded-lg shadow-lg flex flex-col justify-between  h-[340px]  overflow-hidden">
@@ -225,9 +223,9 @@
           </section>
           <!-- Pet Food-Section -->
          <section class="">
-          <h2 class="text-center mt-10 font-adlam text-4xl">Tasty Treats for Happy Pets! 🐾</h2>
-          <h2 class="mt-5 text-center font-adlam text-2xl">20% <span class="text-red-600">Off</span> Scroll This and Choose Your Pets Foods <i class="fa-solid fa-arrow-down-long fa-ms bg-red-600 rounded-full p-2 text-white  animate-bounce delay-100"></i></h2>
-         <div class="flex justify-center mt-20">
+          <h2 class="text-center mt-10 font-adlam text-2xl lg:text-4xl">Tasty Treats for Happy Pets!</h2>
+          <h2 class="mt-5 text-center font-adlam text-xl lg:text-2xl">20% <span class="text-red-600">Off</span> Scroll This and Choose Your Pets Foods <i class="fa-solid fa-arrow-down-long fa-ms bg-red-600 rounded-full p-2 text-white  animate-bounce delay-100"></i></h2>
+         <div class="flex justify-center mt-20  px-5">
           <div class=" carousel carousel-vertical rounded-box h-96">
             <div class="carousel-item h-full">
               <img src="images/mouse.jpeg" />
@@ -248,31 +246,31 @@
         </div>
          </section> 
          <!--Low-Price Section-->
-         <section>
+         <section class="max-auto">
           <div class="mt-20 px-5 lg:px-20">
             <h2 class="px-3 lg:px-0 font-adlam text-3xl font-bold">Everyday low Price</h2>
           </div>
           <!-- Dog-Card -->
-          <div class=" py-10 px-20 lg:px-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class=" py-10 px-5 lg:px-20 min-w-full max-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-auto">
                 <!-- First Card -->
-                <div class="relative bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-6  rounded-lg shadow-lg flex flex-col lg:justify-center  w-[350px] h-[220px] lg:w-[450px] lg:h-[220px] overflow-hidden ">
+                <div class="relative bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-6  rounded-lg shadow-lg flex flex-col lg:justify-center  w-[300px] h-[220px] lg:w-[450px] lg:h-[220px] overflow-hidden max-auto">
                     <!-- Text Content -->
                     <div class="relative z-10">
                         <p class="hidden text-xs font-semibold lg:flex ">Under Price</p>
-                        <h2 class="text-lg font-bold">Pet Grooming Mitt</h2>
+                        <h2 class="text-xl  font-bold">Pet Grooming Mitt</h2>
                         <p class="hidden text-sm lg:text-white lg:flex">(Easy Hair Removal)</p>
                         <p class="text-white text-2xl font-bold mt-2 lg:text-black">$7.99</p>
                     </div>
         
                     <!-- Dog Image -->
                     <div class="absolute bottom-0 right-0">
-                        <img class="w-[180px] h-auto" src="images/cute-dog-mid.png" alt="Corgi Dog">
+                        <img class=" w-[150px] lg:w-[170px] h-auto max-auto" src="images/cute-dog-mid.png" alt="Corgi Dog">
                     </div>
                 </div>
         
                 <!-- Second Card (Yellow) -->
-                <div class="relative bg-yellow-200 p-6 rounded-lg shadow-lg flex flex-col justify-between w-[350px] h-[200px] lg:w-[300px] lg:h-[220px] overflow-hidden">
+                <div class="relative bg-yellow-200 p-6 rounded-lg shadow-lg flex flex-col justify-between max-w-[300px] h-[250px] lg:w-[300px] lg:h-[220px] overflow-hidden max-auto">
                     <!-- Text Content -->
                     <div class="relative z-10">
                         <h2 class="text-md font-bold">T-Shirt for Dogs</h2>
@@ -281,7 +279,7 @@
         
                     <!-- Dog Image -->
                     <div class="absolute bottom-0 right-0">
-                        <img class="w-[150px] h-auto" src="images/cute-pet-small.png" alt="Dog with T-Shirt">
+                        <img class="max-w-[150px] h-auto max-auto" src="images/cute-pet-small.png" alt="Dog with T-Shirt">
                     </div>
                 </div>
             </div>
@@ -297,16 +295,16 @@
             <img class="w-1/2 mx-auto" src="images/cute-pet-mid.png" alt="">
           </div>
           <!-- Input-Text -->
-           <div class="space-y-3">
-            <h2 class="font-bold text-3xl">Get Pawsome News!</h2>
+           <div class="space-y-3 p-2">
+            <h2 class="font-bold text-2xl lg:text-3xl">Get Pawsome News!</h2>
             <p class="">Exclusive training tips, ticks, product deals and more.</p>
-            <input type="text" placeholder="Enter email...." class="input input-bordered w-11/12 max-w-xs" />
+            <input type="text" placeholder="Enter email...." class="input input-bordered w-9/12 lg:w-11/12 max-w-xs" />
             <button class="btn  px-8 py-2 font-bold bg-colorPrimary">Subscribe</button>
            </div>
         </div>
        
       </section>
-      <div class="w-full  px-7 lg:px-20 bg-cardColor absolute lg:max-h-[370px] lg:max-w-[1260px] pt-52 lg:pt-56">
+      <div class=" max-w-[700px] h-auto px-10 lg:px-20 bg-cardColor absolute lg:max-w-[1260px] pt-48 lg:pt-56">
        <div class="grid grid-cols-1 lg:grid-cols-3 space-y-5 lg:space-x-32"> 
           <div>
            <div class="flex items-center gap-2">
